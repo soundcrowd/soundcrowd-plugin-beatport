@@ -1,0 +1,43 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
+
+android {
+    compileSdkVersion 33
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 33
+        versionCode 1
+        versionName "0.1"
+        proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        resValue "string", "client_id", "YOUR-CLIENT-ID"
+        resValue "string", "redirect_uri", "YOUR-REDIRECT-URI"
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled true
+        }
+
+        release {
+            minifyEnabled true
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.tiefensuche.soundcrowd:plugin:0.1'
+}
+
+repositories {
+    maven {
+        url = uri("https://maven.pkg.github.com/soundcrowd/soundcrowd-plugin")
+        credentials {
+            username = System.getenv("GITHUB_ACTOR")
+            password = System.getenv("GITHUB_TOKEN")
+        }
+    }
+}

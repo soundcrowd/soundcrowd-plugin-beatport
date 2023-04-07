@@ -1,0 +1,16 @@
+name: android
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: recursive
+      - run: ./gradlew assembleDebug
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - uses: actions/upload-artifact@v1
+        with:
+          name: soundcrowd-plugin-beatport.apk
+          path: beatport/build/outputs/apk/debug/beatport-debug.apk

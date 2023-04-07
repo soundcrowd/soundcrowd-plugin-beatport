@@ -1,0 +1,14 @@
+<resources>
+    <string name="plugin_name">Beatport</string>
+    <string name="username_key">beatport_username</string>
+    <string name="username_title">Username</string>
+    <string name="username_summary">Your username on Beatport</string>
+    <string name="username_dialog_message">Enter your username on Beatport</string>
+    <string name="password_key">beatport_password</string>
+    <string name="password_title">Password</string>
+    <string name="password_summary">Your password on Beatport</string>
+    <string name="password_dialog_message">Enter your password on Beatport</string>
+    <string name="access_token_key">beatport_access_token</string>
+    <string name="refresh_token_key">beatport_refresh_token</string>
+    <string name="has_subscription">beatport_has_subscription</string>
+</resources>
