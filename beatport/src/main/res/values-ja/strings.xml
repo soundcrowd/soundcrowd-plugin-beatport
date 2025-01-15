@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="plugin_name">Beatport</string>
+  <string name="username_key">beatport_username</string>
+  <string name="username_title">ユーザー名</string>
+  <string name="username_summary">Beatport のユーザー名を入力</string>
+  <string name="username_dialog_message">Beatport のユーザー名を入力してください</string>
+  <string name="password_key">beatport_password</string>
+  <string name="password_title">パスワード</string>
+  <string name="password_summary">Beatport のパスワードを入力</string>
+  <string name="password_dialog_message">Beatport のパスワードを入力してください</string>
+  <string name="access_token_key">beatport_access_token</string>
+  <string name="refresh_token_key">beatport_refresh_token</string>
+  <string name="has_subscription">beatport_has_subscription</string>
+</resources>
