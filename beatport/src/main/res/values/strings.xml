@@ -11,4 +11,6 @@
     <string name="access_token_key">beatport_access_token</string>
     <string name="refresh_token_key">beatport_refresh_token</string>
     <string name="has_subscription">beatport_has_subscription</string>
+    <string name="beatport_access_token_key">beatport_access_token</string>
+    <string name="beatport_refresh_token_key">beatport_refresh_token</string>
 </resources>
