@@ -6,9 +6,9 @@ plugins {
 android {
     defaultConfig {
         namespace 'com.tiefensuche.soundcrowd.plugins.beatport'
-        compileSdk 35
+        compileSdk 36
         minSdk 21
-        targetSdk 35
+        targetSdk 36
 
         resValue "string", "beatport_client_id", "YOUR-CLIENT-ID"
         resValue "string", "beatport_redirect_uri", "YOUR-REDIRECT-URI"
@@ -31,7 +31,7 @@ android {
 
 dependencies {
     implementation 'com.github.soundcrowd:soundcrowd-plugin:v1.0.0'
-    implementation 'com.github.0xf4b1:beatport-kt:v0.1.0'
+    implementation 'com.github.0xf4b1:beatport-kt:b45a0064d3'
 }
 
 repositories {
